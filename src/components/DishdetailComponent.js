@@ -5,7 +5,7 @@ class DishDetail extends Component {
     constructor(props) {
         super(props);
     }
-
+    // Test
     renderDish(dish) {
         if(dish!=null) {
             return (
