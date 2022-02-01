@@ -42,7 +42,7 @@ class DishDetail extends Component {
                     return (
                         <ListGroup>
                             <ListGroupItem className="border-0">{comment.comment}</ListGroupItem>
-                            <ListGroupItem className="border-0">-- {comment.author}</ListGroupItem>
+                            <ListGroupItem className="border-0"><p>-- {comment.author}, {new Intl.DateTimeFormat('en-US', {year:'numeric', month:'short', day:'2-digit'}).format(new Date(Date.parse(comment.date)))}</p></ListGroupItem>
                         </ListGroup>
                     )     
                 })}
@@ -52,7 +52,7 @@ class DishDetail extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 { this.renderDish(this.props.dish) }
             </div>
         );
