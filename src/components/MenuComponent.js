@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
     CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
- function RenderMenuItems({ dish, onClick }) {
+ function RenderMenuItems({ dish }) {
     return (
         <Card>
             {/* Remember to use `` in Link */}
